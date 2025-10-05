@@ -1,5 +1,31 @@
 # CSmart 편입 상담 AI 시스템
 
+## 🏗️ 프로젝트 구조
+
+```
+CSmart/
+├── 📓 CSmart_LangGraph.ipynb       # 원본 Jupyter Notebook (ipynb)
+├── 🎯 api.py                       # 메인 API (ipynb를 모듈화)
+├── 📝 example_usage.py             # 사용 예제 모음
+│
+├── step1_env.py                    # 환경 변수 로드 (Cell 2)
+├── step2_states.py                 # 상태 정의 및 prepare_context (Cell 4-5)
+├── step3_db_and_search.py          # DB 및 검색 도구 (Cell 9, 하이브리드 검색)
+├── step4_llm.py                    # LLM 설정 (Cell 14, Gemini)
+├── step5_guideline_agent.py        # GuidelineDB RAG 에이전트 (Cell 19)
+├── step6_web_agent.py              # 웹 검색 RAG 에이전트 (Cell 22)
+├── step7_integrated_agent.py       # 통합 에이전트 (Cell 25-27, 라우팅)
+├── step8_test.py                   # 원본 모듈별 테스트 (Cell 28)
+│
+├── GuidelineDB.csv                 # 가이드라인 데이터
+├── chroma_guideline/               # 벡터 DB 저장소
+├── requirements.txt                # 필요 패키지
+├── .env                            # 환경 변수 (생성 필요)
+└── README.md                       # 이 파일
+```
+
+
+
 ## 💡 중요: ipynb vs api.py
 
 이 프로젝트는 **두 가지 방식**으로 사용가능:
@@ -72,29 +98,6 @@ print(result["final_answer"])
 
 ---
 
-## 🏗️ 프로젝트 구조
-
-```
-CSmart/
-├── 📓 CSmart_LangGraph.ipynb       # 원본 Jupyter Notebook (ipynb)
-├── 🎯 api.py                       # 메인 API (ipynb를 모듈화)
-├── 📝 example_usage.py             # 사용 예제 모음
-│
-├── step1_env.py                    # 환경 변수 로드 (Cell 2)
-├── step2_states.py                 # 상태 정의 및 prepare_context (Cell 4-5)
-├── step3_db_and_search.py          # DB 및 검색 도구 (Cell 9, 하이브리드 검색)
-├── step4_llm.py                    # LLM 설정 (Cell 14, Gemini)
-├── step5_guideline_agent.py        # GuidelineDB RAG 에이전트 (Cell 19)
-├── step6_web_agent.py              # 웹 검색 RAG 에이전트 (Cell 22)
-├── step7_integrated_agent.py       # 통합 에이전트 (Cell 25-27, 라우팅)
-├── step8_test.py                   # 원본 모듈별 테스트 (Cell 28)
-│
-├── GuidelineDB.csv                 # 가이드라인 데이터
-├── chroma_guideline/               # 벡터 DB 저장소
-├── requirements.txt                # 필요 패키지
-├── .env                            # 환경 변수 (생성 필요)
-└── README.md                       # 이 파일
-```
 
 
 ## 🔄 실제 동작 과정
