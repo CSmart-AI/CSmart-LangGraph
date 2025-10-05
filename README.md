@@ -71,6 +71,15 @@ print(result["final_answer"])
 # 로그 숨기기
 result = get_answer("질문내용", verbose=False)
 print(result["final_answer"])
+
+
+#api.py에서 get_answer() 함수 하나로 모든 기능을 사용할 수 있습니다.
+
+사용법:
+    from api import get_answer
+    
+    result = get_answer("중앙대학교 이과 편입은 어떤 과목을 준비해야 하나요?")
+    print(result["final_answer"])
 ```
 
 
