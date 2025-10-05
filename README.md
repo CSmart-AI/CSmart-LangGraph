@@ -20,7 +20,7 @@ CSmart/
 ├── GuidelineDB.csv                 # 가이드라인 데이터
 ├── chroma_guideline/               # 벡터 DB 저장소
 ├── requirements.txt                # 필요 패키지
-├── .env                            # 환경 변수 (생성 필요)
+├── .env                            # 환경 변수
 └── README.md                       # 이 파일
 ```
 
