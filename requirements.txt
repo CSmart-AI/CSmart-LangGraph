@@ -10,3 +10,6 @@ chromadb
 sentence-transformers
 pydantic
 tavily-python
+fastapi
+uvicorn[standard]
+ipython
