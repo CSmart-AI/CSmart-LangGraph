@@ -4,7 +4,7 @@
 
 ## 🆕 핵심 기능: 통합 AI 시스템
 
-이제 **하나의 API**로 두 가지 AI 모델을 함께 사용합니다:
+**하나의 API**로 두 가지 AI 모델을 함께 사용합니다:
 
 ### 🎯 자동 라우팅 (Question Routing)
 질문의 복잡도에 따라 **자동으로** 적절한 모델을 선택합니다:
@@ -226,6 +226,9 @@ result = get_answer("중앙대 편입", force_mode="simple")   # 파인튜닝 �
 7. 📝 최종 답변 생성 (step7, LangGraph 사용 시)
    └─ 수집된 정보를 종합하여 학생에게 제공
 ```
+
+### 전체 시스템 구조
+<img width="740" height="2124" alt="1  전체 시스템 구조" src="https://github.com/user-attachments/assets/54877d23-ad6c-4d64-8bdc-e21ca6d4554b" />
 
 ---
 
