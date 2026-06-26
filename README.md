@@ -2,11 +2,6 @@
 
 대학 편입 준비생을 위한 상담 보조 AI Agent입니다. **파인튜닝 모델**과 **LangGraph 에이전트**를 통합한 하이브리드 AI 시스템입니다.
 
-### 전체 시스템 구조
-<img width="740" height="2124" alt="1  전체 시스템 구조" src="https://github.com/user-attachments/assets/54877d23-ad6c-4d64-8bdc-e21ca6d4554b" />
-
----
-
 ## 핵심 기능: 통합 AI 시스템
 
 **하나의 API**로 두 가지 AI 모델을 함께 사용합니다:
@@ -30,6 +25,11 @@
 - "수학 공부는 어떻게 해야 할까요?" → 파인튜닝 모델 (재가공 후 반환)
 - "중앙대학교 이과 편입은 어떤 과목을 준비해야 하나요?" → LangGraph 에이전트
 - 파인튜닝 답변 품질 미달 → 자동으로 LangGraph로 재시도
+
+### 전체 시스템 구조
+<img width="740" height="2124" alt="1  전체 시스템 구조" src="https://github.com/user-attachments/assets/54877d23-ad6c-4d64-8bdc-e21ca6d4554b" />
+
+---
 
 ## 빠른 시작 (처음 사용자)
 
